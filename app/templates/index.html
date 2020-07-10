@@ -26,10 +26,12 @@
 	<title>Mama Search</title>
     </head>
     <body id="main" style="display: none; background-color: {{ '#000' if config.dark else '#fff' }}">
-       	    <div class="sidenav">
+	    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>
+       	    <div id="mySidenav" class="sidenav">
+  		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		  <a href="https://www.facebook.com/mahir.tanjim.3">Facebook</a>
 		  <a href="https://www.instagram.com/mahirtanjim">Instagram</a>
- 	          <a href="https://sites.google.com/view/web-ui">Downloader</a>
+ 	          <a href="https://sites.google.com/view/web-ui">More Projects</a>
   	    </div>
 	    <div class="search-container">
 	   <center>
@@ -135,10 +137,14 @@
 	<script>
 		function openNav() {
  		 document.getElementById("mySidenav").style.width = "250px";
+ 		 document.getElementById("main").style.marginLeft = "250px";
+  		document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 		}
 
 		function closeNav() {
-		  document.getElementById("mySidenav").style.width = "0";
+ 		 document.getElementById("mySidenav").style.width = "0";
+ 		 document.getElementById("main").style.marginLeft= "0";
+		  document.body.style.backgroundColor = "white";
 		}
 	</script>
     </body>
