@@ -1,8 +1,8 @@
 body {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: Avenir, Helvetica, Arial, sans-serif ,Segoe UI;
 }
 .name-it {
-	font-family: sans-serif;
+	font-family: Segoe UI;
 	color: #685e79;
 	font-size: 30px;
 }
